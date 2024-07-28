@@ -1,7 +1,19 @@
 import express from 'express';
+import mongoose from 'mongoose';
+import dotenv from 'dotenv';
 
+// Load environment variables from .env file
+dotenv.config();
 const app = express();
 
-app.listen(3000,()=>{
-    console.log("App is running on port 3000...")
+const PORT = 3000;
+
+mongoose.connect(process.env.DBLINK)
+.then(()=>{
+    console.log("Database is connected")
+}
+).catch((err)=>{ console.log(err)})
+
+app.listen(PORT,()=>{
+    console.log("App is running on port 3000....")
 })
