@@ -3,6 +3,7 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 
 import userRoutes from './routes/user.route.js';
+import authRoutes from './routes/auth.route.js';
 
 // Load environment variables from .env file
 dotenv.config();
@@ -16,8 +17,10 @@ mongoose.connect(process.env.DBLINK)
 }
 ).catch((err)=>{ console.log(err)})
 
+app.use(express.json())
 app.listen(PORT,()=>{
     console.log("App is running on port 3000....")
 })
 
 app.use('/api/user', userRoutes);
+app.use('/api/auth', authRoutes);
