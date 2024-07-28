@@ -49,7 +49,7 @@ export default function SignUp() {
         {/* top */}
         <div className="m-auto">
           <div className="self-center whitespace-nowrap p-0">
-            <img src="./img/logo-vert.png" className="h-12 m-0 p-0" />
+            <img src="./img/logo-vert.png" className="h-[72px] m-0 p-0" />
           </div>
         </div>
 

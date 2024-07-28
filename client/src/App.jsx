@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import React from 'react';
 import './index.css';
 import { About, Dashboard, Home, Projects, SignIn, SignUp } from './pages';
-import { Header } from './Components';
+import { Header,Footer } from './Components';
 
 const App = ()=> {
   return(
@@ -16,6 +16,7 @@ const App = ()=> {
         <Route path='/dashboard' element={<Dashboard/>} />
         <Route path='/projects' element={<Projects/>} />
       </Routes>
+      <Footer/>
     </BrowserRouter>
   )
 }
