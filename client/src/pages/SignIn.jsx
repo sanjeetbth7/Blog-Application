@@ -2,6 +2,7 @@ import { Alert, Button, Spinner, TextInput } from "flowbite-react";
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Label } from "flowbite-react";
+import {OAuth }from "../Components/";
 
 import { signInStart, signInFailure, signInSuccess } from "../redux/user/userSlice";
 import { useDispatch, useSelector } from "react-redux";
@@ -84,6 +85,7 @@ export default function SignIn() {
                 <span className="pl-3">Loading...</span>
               </>) : ("Sign in")}
             </Button>
+            <OAuth/>
           </form>
 
           <div className="flex gap-2 text-sm mt-5">

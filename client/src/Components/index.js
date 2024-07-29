@@ -1,4 +1,4 @@
 import Header from "./Header";
 import Footer from "./Footer";
-
-export {Header, Footer}
+import OAuth from "./OAuth";
+export {Header, Footer, OAuth}
