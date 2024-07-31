@@ -16,7 +16,7 @@ export default function FooterComponent() {
 
           <div className="grid grid-cols-2 gap-3 sm:mt-4 sm:grid-cols-3 sm:gap-6 font-medium">
             <div>
-              <Footer.Title title="Pages" className=" text-cyan-500" />
+              <Footer.Title title="Pages" className=" text-cyan-500 dark:text-cyan-300" />
               <Footer.LinkGroup col>
                 <Footer.Link to="/about">About Us</Footer.Link>
                 <Footer.Link to="/">Home</Footer.Link>
@@ -25,7 +25,7 @@ export default function FooterComponent() {
             </div>
 
             <div>
-              <Footer.Title title="Follow Us" className=" text-cyan-500"/>
+              <Footer.Title title="Follow Us" className=" text-cyan-500 dark:text-cyan-300"/>
               <Footer.LinkGroup col>
                 <Footer.Link
                   target="_blank"
@@ -49,7 +49,7 @@ export default function FooterComponent() {
             </div>
 
             <div>
-              <Footer.Title title="LEGAL" className=" text-cyan-500"/>
+              <Footer.Title title="LEGAL" className=" text-cyan-500 dark:text-cyan-300"/>
               <Footer.LinkGroup col>
                 <Footer.Link
                 >

@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import React from 'react';
 import './index.css';
 import { About, Dashboard, Home, Projects, SignIn, SignUp } from './pages';
-import { Header,Footer } from './Components';
+import { Header,Footer,PrivateRoute } from './Components';
 
 const App = ()=> {
   return(
@@ -13,7 +13,9 @@ const App = ()=> {
         <Route path='/about' element={<About/>} />
         <Route path='/sign-in' element={<SignIn/>} />
         <Route path='/sign-up' element={<SignUp/>} />
-        <Route path='/dashboard' element={<Dashboard/>} />
+        <Route element={<PrivateRoute />}>
+          <Route path='/dashboard' element={<Dashboard />} />
+        </Route>
         <Route path='/projects' element={<Projects/>} />
       </Routes>
       <Footer/>
