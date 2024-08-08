@@ -16,12 +16,13 @@ export const create = async (req, res, next) => {
   const newPost = new Post({
     ...req.body,
     slug,
-    userId: req.user.id,
+    userId: req.user.userId,
   });
   try {
     const savedPost = await newPost.save();
-    res.status(201).json(savedPost);
+    res.status(201).json(savedPost);    
   } catch (error) {
+    // console.log(error);
     next(error);
   }
 };
