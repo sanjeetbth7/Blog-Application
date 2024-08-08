@@ -3,7 +3,8 @@ import React from 'react';
 import './index.css';
 import { About, Dashboard, Home, Projects, SignIn, SignUp } from './pages';
 import { Header,Footer,PrivateRoute } from './Components';
-
+import OnlyAdminPrivateRoute from './Components/OnlyAdminPrivateRoute';
+import CreatePost from './pages/CreatePost';
 const App = ()=> {
   return(
     <BrowserRouter>
@@ -15,6 +16,9 @@ const App = ()=> {
         <Route path='/sign-up' element={<SignUp/>} />
         <Route element={<PrivateRoute />}>
           <Route path='/dashboard' element={<Dashboard />} />
+        </Route>
+        <Route element={<OnlyAdminPrivateRoute />}>
+          <Route path='/create-post' element={<CreatePost />} />
         </Route>
         <Route path='/projects' element={<Projects/>} />
       </Routes>
