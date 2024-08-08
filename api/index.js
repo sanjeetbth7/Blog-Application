@@ -5,7 +5,7 @@ import dotenv from 'dotenv';
 import userRoutes from './routes/user.route.js';
 import authRoutes from './routes/auth.route.js';
 import cookieParser from 'cookie-parser';
-
+import postRoutes from './routes/post.route.js'
 // Load environment variables from .env file
 dotenv.config();
 const app = express();
@@ -26,7 +26,7 @@ app.listen(PORT,()=>{
 
 app.use('/api/user', userRoutes);
 app.use('/api/auth', authRoutes);
-
+app.use('/api/post', postRoutes);
 // middleware
 app.use((err,req,res,next)=>{
     const statusCode = err.statusCode || 500;
