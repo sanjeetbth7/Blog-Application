@@ -1,7 +1,16 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import React from 'react';
 import './index.css';
-import { About, Dashboard, Home, Projects, SignIn, SignUp,CreatePost, UpdatePost } from './pages';
+import { About, 
+  Dashboard, 
+  Home, 
+  Projects, 
+  SignIn, 
+  SignUp,
+  CreatePost, 
+  UpdatePost,
+  PostPage,
+ } from './pages';
 import { Header,Footer,PrivateRoute } from './Components';
 import OnlyAdminPrivateRoute from './Components/OnlyAdminPrivateRoute';
 
@@ -22,6 +31,7 @@ const App = ()=> {
           <Route path='/update-post/:postId' element={<UpdatePost />} />
         </Route>
         <Route path='/projects' element={<Projects/>} />
+        <Route path='/post/:postSlug' element={<PostPage />} />
       </Routes>
       <Footer/>
     </BrowserRouter>
