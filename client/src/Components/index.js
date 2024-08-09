@@ -8,7 +8,7 @@ import DashProfile from "./DashProfile";
 import DashPosts from "./DashPosts";
 import OnlyAdminPrivateRoute from "./OnlyAdminPrivateRoute";
 import DashUsers from "./DashUsers";
-
+import CallToAction from "./CallToAction";
 export {Header, 
     Footer, 
     OAuth, 
@@ -19,4 +19,5 @@ export {Header,
     DashPosts,
     OnlyAdminPrivateRoute,
     DashUsers,
+    CallToAction,
 }

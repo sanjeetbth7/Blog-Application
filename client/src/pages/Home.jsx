@@ -1,8 +1,11 @@
 import React from 'react'
-
+import { CallToAction } from '../Components'
 export default function Home() {
   return (
-    <div>Home</div>
+    <div>
+      <div>Home</div>
+      <CallToAction />
+    </div>
   )
 }
 
