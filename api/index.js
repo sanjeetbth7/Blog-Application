@@ -14,7 +14,7 @@ const __dirname = path.resolve();
 const app = express();
 app.use(cookieParser());
 
-const PORT = 3000;
+const PORT =3000;
 
 mongoose.connect(process.env.DBLINK)
 .then(()=>{
