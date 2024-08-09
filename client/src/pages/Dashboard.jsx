@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import {DashProfile, DashSidebar, DashPosts,DashUsers, DashComments} from '../Components/';
+import {DashProfile, DashSidebar, DashPosts,DashUsers, DashComments, DashboardComp} from '../Components/';
 
 
 export default function Dashboard() {
@@ -29,7 +29,7 @@ export default function Dashboard() {
       {/* comments  */}
       {tab === 'comments' && <DashComments />}
       {/* dashboard comp */}
-      {/* {tab === 'dash' && <DashboardComp />} */}
+      {tab === 'dash' && <DashboardComp />}
     </div>
   );
 }

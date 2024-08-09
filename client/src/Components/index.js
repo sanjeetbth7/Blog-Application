@@ -13,7 +13,7 @@ import CommentSection from "./CommentSection";
 import ScrollToTop from "./ScrollToTop";
 import PostCard from "./PostCard";
 import DashComments from './DashComments';
-
+import DashboardComp from "./DashboardComp";
 export {Header, 
     Footer, 
     OAuth, 
@@ -29,4 +29,5 @@ export {Header,
     ScrollToTop,
     PostCard,
     DashComments,
+    DashboardComp,
 }
