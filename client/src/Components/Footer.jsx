@@ -18,9 +18,9 @@ export default function FooterComponent() {
             <div>
               <Footer.Title title="Pages" className=" text-cyan-500 dark:text-cyan-300" />
               <Footer.LinkGroup col>
-                <Footer.Link to="/about">About Us</Footer.Link>
-                <Footer.Link to="/">Home</Footer.Link>
-                <Footer.Link to="/projects">Projects</Footer.Link>
+                <Footer.Link href="/about">About Us</Footer.Link>
+                <Footer.Link href="/">Home</Footer.Link>
+                <Footer.Link href="/projects">Projects</Footer.Link>
               </Footer.LinkGroup>
             </div>
 
@@ -76,7 +76,7 @@ export default function FooterComponent() {
         <Footer.Icon target="_blank" href='#' icon={BsFacebook}/>
         <Footer.Icon target="_blank" href='#' icon={BsInstagram}/>
         <Footer.Icon target="_blank" href='#' icon={BsTwitter}/>
-        <Footer.Icon target="_blank" href='#' icon={BsLinkedin}/>
+        <Footer.Icon target="_blank" href='https://www.linkedin.com/in/sanjeet-kumar07/' icon={BsLinkedin}/>
         <Footer.Icon target="_blank" href='https://github.com/sanjeetbth7' icon={BsGithub}/>
         <Footer.Icon target="_blank" href='https://getsetexplore.quora.com/' icon={BsQuora}/>
 

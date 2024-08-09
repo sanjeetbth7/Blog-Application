@@ -14,6 +14,7 @@ import ScrollToTop from "./ScrollToTop";
 import PostCard from "./PostCard";
 import DashComments from './DashComments';
 import DashboardComp from "./DashboardComp";
+import Banner from "./Banner";
 export {Header, 
     Footer, 
     OAuth, 
@@ -30,4 +31,5 @@ export {Header,
     PostCard,
     DashComments,
     DashboardComp,
+    Banner,
 }
