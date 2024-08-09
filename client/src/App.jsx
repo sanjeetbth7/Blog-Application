@@ -10,14 +10,16 @@ import { About,
   CreatePost, 
   UpdatePost,
   PostPage,
+
  } from './pages';
-import { Header,Footer,PrivateRoute } from './Components';
+import { Header,Footer,PrivateRoute, ScrollToTop } from './Components';
 import OnlyAdminPrivateRoute from './Components/OnlyAdminPrivateRoute';
 
 const App = ()=> {
   return(
     <BrowserRouter>
     <Header/>
+    <ScrollToTop />
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/about' element={<About/>} />
