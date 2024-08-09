@@ -11,6 +11,7 @@ import DashUsers from "./DashUsers";
 import CallToAction from "./CallToAction";
 import CommentSection from "./CommentSection";
 import ScrollToTop from "./ScrollToTop";
+import PostCard from "./PostCard";
 export {Header, 
     Footer, 
     OAuth, 
@@ -24,4 +25,5 @@ export {Header,
     CallToAction,
     CommentSection,
     ScrollToTop,
+    PostCard,
 }
