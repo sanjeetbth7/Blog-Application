@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import {DashProfile, DashSidebar, DashPosts} from '../Components/';
+import {DashProfile, DashSidebar, DashPosts,DashUsers} from '../Components/';
 
 
 export default function Dashboard() {
@@ -25,7 +25,7 @@ export default function Dashboard() {
       {/* posts... */}
       {tab === 'posts' && <DashPosts />}
       {/* users */}
-      {/* {tab === 'users' && <DashUsers />} */}
+      {tab === 'users' && <DashUsers />}
       {/* comments  */}
       {/* {tab === 'comments' && <DashComments />} */}
       {/* dashboard comp */}
