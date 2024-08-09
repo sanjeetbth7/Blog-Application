@@ -24,27 +24,43 @@ export default function Search() {
     const searchTermFromUrl = urlParams.get('searchTerm');
     const sortFromUrl = urlParams.get('sort');
     const categoryFromUrl = urlParams.get('category');
-    if (searchTermFromUrl || sortFromUrl || categoryFromUrl) {
-      setSidebarData({
-        ...sidebarData,
-        searchTerm: searchTermFromUrl,
-        sort: sortFromUrl,
-        category: categoryFromUrl,
-      });
+  
+    // Prepare the sidebar data, excluding 'uncategorized' category
+    const updatedSidebarData = {
+      ...sidebarData,
+      searchTerm: searchTermFromUrl,
+      sort: sortFromUrl,
+    };
+  
+    if (categoryFromUrl && categoryFromUrl !== 'uncategorized') {
+      updatedSidebarData.category = categoryFromUrl;
     }
-
+  
+    if (searchTermFromUrl || sortFromUrl || categoryFromUrl) {
+      setSidebarData(updatedSidebarData);
+    }
+  
     const fetchPosts = async () => {
       setLoading(true);
+  
+      // Remove 'category' parameter from URL if it's 'uncategorized'
+      if (categoryFromUrl === 'uncategorized') {
+        urlParams.delete('category');
+      }
+  
       const searchQuery = urlParams.toString();
       const res = await fetch(`/api/post/getposts?${searchQuery}`);
+  
       if (!res.ok) {
         setLoading(false);
         return;
       }
+  
       if (res.ok) {
         const data = await res.json();
         setPosts(data.posts);
         setLoading(false);
+  
         if (data.posts.length === 9) {
           setShowMore(true);
         } else {
@@ -52,6 +68,7 @@ export default function Search() {
         }
       }
     };
+  
     fetchPosts();
   }, [location.search]);
 
