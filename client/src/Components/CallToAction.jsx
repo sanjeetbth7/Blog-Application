@@ -10,7 +10,7 @@ export default function CallToAction() {
         >
           <img
             className="object-contain w-full h-full"
-            src="https://private-user-images.githubusercontent.com/98413687/261015825-8016ddad-36e7-477c-a330-97a639bc27a6.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjMyMDE4MTgsIm5iZiI6MTcyMzIwMTUxOCwicGF0aCI6Ii85ODQxMzY4Ny8yNjEwMTU4MjUtODAxNmRkYWQtMzZlNy00NzdjLWEzMzAtOTdhNjM5YmMyN2E2LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA4MDklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwODA5VDExMDUxOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTYwNWE4ZDc1M2M2Y2VkYjMyZTg3NTYyZmUzYjdjZjdjYWQzYmI3YWNkMjU1NzU1ZmM3MWI3MTU5YTQyYTY5YTYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.Rp_4d5HM_qw_I-n9cGsEsjlryoc6RyYtst3fm47jVns"
+            src="./img/courosel/portfolio.png"
             alt="portfolio"
           />
         </a>

@@ -78,7 +78,6 @@ export default function Header() {
         >
           {theme === "light" ? <FaSun /> : <FaMoon />}
         </Button>
-        <Link to="/sign-in">
           {currentUser ? (
             <Dropdown
               arrowIcon={false}
@@ -109,7 +108,7 @@ export default function Header() {
             </div>
             
           )}
-        </Link>
+        
 
         <Navbar.Toggle />
       </div>
