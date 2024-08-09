@@ -33,6 +33,8 @@ export default function Search() {
       });
     }
 
+
+
     const fetchPosts = async () => {
       setLoading(true);
       const searchQuery = urlParams.toString();
@@ -55,6 +57,7 @@ export default function Search() {
     fetchPosts();
   }, [location.search]);
 
+
   const handleChange = (e) => {
     if (e.target.id === 'searchTerm') {
       setSidebarData({ ...sidebarData, searchTerm: e.target.value });
@@ -65,8 +68,8 @@ export default function Search() {
     }
     if (e.target.id === 'category') {
       const category = e.target.value || 'uncategorized';
-      setSidebarData({ ...sidebarData, category });
-    }
+       setSidebarData({ ...sidebarData, category });
+      }
   };
 
   const handleSubmit = (e) => {
