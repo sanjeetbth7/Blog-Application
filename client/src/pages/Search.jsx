@@ -44,7 +44,7 @@ export default function Search() {
       setLoading(true);
   
       // Remove 'category' parameter from URL if it's 'uncategorized'
-      if (categoryFromUrl === 'uncategorized') {
+      if (!categoryFromUrl || categoryFromUrl === 'uncategorized') {
         urlParams.delete('category');
       }
   
