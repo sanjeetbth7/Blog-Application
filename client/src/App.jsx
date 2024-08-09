@@ -10,7 +10,7 @@ import { About,
   CreatePost, 
   UpdatePost,
   PostPage,
-
+  Search
  } from './pages';
 import { Header,Footer,PrivateRoute, ScrollToTop } from './Components';
 import OnlyAdminPrivateRoute from './Components/OnlyAdminPrivateRoute';
@@ -25,6 +25,7 @@ const App = ()=> {
         <Route path='/about' element={<About/>} />
         <Route path='/sign-in' element={<SignIn/>} />
         <Route path='/sign-up' element={<SignUp/>} />
+        <Route path='/search' element={<Search />} />
         <Route element={<PrivateRoute />}>
           <Route path='/dashboard' element={<Dashboard />} />
         </Route>
