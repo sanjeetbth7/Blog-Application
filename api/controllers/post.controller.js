@@ -104,6 +104,8 @@ export const getposts = async (req, res, next) => {
       );
       res.status(200).json(updatedPost);
     } catch (error) {
+      console.log(error);
+      console.log(req.params.postId);
       next(error);
     }
   };
