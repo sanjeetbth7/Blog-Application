@@ -48,24 +48,19 @@ To run the GetSetExplore Blog on your local machine, follow these steps:
 
 ### Backend Setup
 
-1. Navigate to the backend directory:  
-   ```bash
-   cd ../backend
-   ```
-
-2. Install the dependencies:  
+1. Install the dependencies:  
    ```bash
    npm install
    ```
 
-3. Create a `.env` file in the backend directory and add your environment variables:
+2. Create a `.env` file in the backend directory and add your environment variables:
 
    ```
    MONGO_URI=<Your MongoDB URI>
    JWT_SECRET=<Your JWT Secret>
    ```
 
-4. Start the backend server:  
+3. Start the backend server:  
    ```bash
    npm start
    ```
