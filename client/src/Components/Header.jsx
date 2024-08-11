@@ -53,7 +53,7 @@ export default function Header() {
   return (
     <Navbar className="border-b-2">
       <Link to="/" className="self-center whitespace-nowrap p-0">
-        <img src="./img/logo-vert.png" className="h-12 m-0 p-0" />
+        <img src="./img/logo-vert.png" className="h-9 m-0 p-0 md:h-12" />
       </Link>
       <form onSubmit={handleSubmit}>
         <TextInput
@@ -65,13 +65,13 @@ export default function Header() {
           onChange={(e) => setSearchTerm(e.target.value)}
         />
       </form>
-      <Button className="w-12 h-10 lg:hidden" color="gray" pill>
+      <Button className=" w-10 h-9 md:w-12 md:h-10 lg:hidden" color="gray" pill>
         <AiOutlineSearch />
       </Button>
 
-      <div className="flex gap-2 md:order-2">
+      <div className="flex gap-2 md:order-2 ">
         <Button
-          className="w-12 h-10 sm:inline"
+          className="w-10 h-9 md:w-12 md:h-10 sm:inline"
           color="gray"
           pill
           onClick={() => dispatch(toggleTheme())}
@@ -88,7 +88,7 @@ export default function Header() {
               }
             >
               <Dropdown.Header>
-                <span className="block text-sm">@{currentUser.username}</span>
+                <span className="block text-sm ">@{currentUser.username}</span>
                 <span className="block text-sm font-medium truncate">
                   {currentUser.email}
                 </span>
