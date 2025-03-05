@@ -5,35 +5,13 @@ export default function CallToAction() {
     <div className="h-48 sm:h-64 xl:h-80 2xl:h-96 max-w-3xl mx-auto">
       <Carousel>
         <a
-          href="https://github.com/sanjeetbth7/portfolio"
+          href="https://krishi-nexus.vercel.app"
           className=" flex justify-center items-center overflow-hidden"
         >
           <img
             className="object-cover w-full h-full"
-            src="./img/courosel/portfolio.png"
-            alt="portfolio"
-          />
-        </a>
-
-        <a
-          href="https://github.com/sanjeetbth7/SmartzAgri"
-          className="flex justify-center items-center overflow-hidden"
-        >
-          <img
-            className="object-cover w-full h-full"
-            src="https://raw.githubusercontent.com/sanjeetbth7/SmartzAgri/master/public/images/demo/home.png"
-            alt="SmartAgri"
-          />
-        </a>
-
-        <a
-          href="https://github.com/sanjeetbth7/Employee-Management-System"
-          className="flex justify-center items-center overflow-hidden"
-        >
-          <img
-            className="object-cover w-full h-full"
-            src="./img/courosel/ems.png"
-            alt="employee management system"
+            src="./img/courosel/krishi-nexus.png"
+            alt="Krishi Nexus"
           />
         </a>
 
@@ -56,6 +34,28 @@ export default function CallToAction() {
             className="object-cover w-full h-full"
             src="./img/courosel/e-commerce.png"
             alt="e-commerce"
+          />
+        </a>
+
+        <a
+          href="https://github.com/sanjeetbth7/Employee-Management-System"
+          className="flex justify-center items-center overflow-hidden"
+        >
+          <img
+            className="object-cover w-full h-full"
+            src="./img/courosel/ems.png"
+            alt="employee management system"
+          />
+        </a>
+
+        <a
+          href="https://github.com/sanjeetbth7/SmartzAgri"
+          className="flex justify-center items-center overflow-hidden"
+        >
+          <img
+            className="object-cover w-full h-full"
+            src="https://raw.githubusercontent.com/sanjeetbth7/SmartzAgri/master/public/images/demo/home.png"
+            alt="SmartAgri"
           />
         </a>
       </Carousel>

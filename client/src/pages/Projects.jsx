@@ -1,4 +1,4 @@
-import React from "react";
+
 import { CallToAction } from "../Components";
 export default function Projects() {
   return (
